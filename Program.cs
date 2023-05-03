@@ -70,7 +70,7 @@ class Program
         {
             if (downgradeActive)
             {
-                Log.Information("Downgrade inactive");
+                Log.Information("Downgrade deactivated");
             }
             downgradeActive = false;
         }
@@ -78,7 +78,8 @@ class Program
         {
             if (!downgradeActive)
             {
-                Log.Information("Downgrade active");
+
+                Log.Information("Downgrade activated");
             }
             downgradeActive = true;
         }
